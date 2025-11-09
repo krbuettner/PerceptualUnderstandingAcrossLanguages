@@ -118,7 +118,7 @@
 
 <html>
 <head>
-	<title>Multilingual Retrieval Study</title>
+	<title>Perceptual Understanding Across Languages</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
 	<meta property="og:title" content="Quantifying the Gaps Between Translation and Native Perception in Training for Multimodal, Multilingual Retrieval" />
 	<meta property="og:description" content="Paper description." />
@@ -138,13 +138,18 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Quantifying the Gaps Between Translation and Native Perception in Training for Multimodal, Multilingual Retrieval (EMNLP24)</span>
+		<span style="font-size:36px">A Multimodal Recaptioning Framework to Account for Perceptual Diversity Across Languages in Vision-Language Modeling (IJNCLP-AACL25)</span>
 		<table align=center width=600px>
 			<table align=center width=600px>
 				<tr>
 					<td align=center width=100px>
 						<center>
 							<span style="font-size:24px">Kyle Buettner</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px">Jacob T. Emmerson</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
@@ -180,17 +185,7 @@
 		</table>
 	</center>
 
-	<center>
-		<table align=center width=850px>
-			<tr>
-				<td width=260px>
-					<center>
-						<img class="round" style="width:800px" src="./resources/intro_3.PNG"/>
-					</center>
-				</td>
-			</tr>
-		</table>
-	</center>
+
 
 
 	<hr>
@@ -199,7 +194,8 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				There is a scarcity of multilingual vision-language models that properly account for the perceptual differences that are reflected in image captions across languages and cultures. In this work, through a multimodal, multilingual retrieval case study, we quantify the existing lack of model flexibility. We empirically show performance gaps between training on captions that come from native German perception and captions that have been either machine-translated or human-translated from English into German. To address these gaps, we further propose and evaluate caption augmentation strategies. While we achieve mean recall improvements (+1.3), gaps still remain, indicating an open area of future work for the community.
+				When captioning an image, people describe objects in diverse ways by using different terms or including details that are perceptually noteworthy to them. Descriptions are especially unique across languages and cultures. Machine translation, which has enhanced multilingual capabilities in vision-language models, often relies on text written by English speakers, leading to a perceptual bias. In this work, we outline a framework to address this bias. We particularly use a small amount of cross-language native speaker data, nearest-neighbor example guidance, and multimodal LLM reasoning to produce targeted caption changes across languages. When adding rewrites to multilingual CLIP finetuning, we improve on German and Japanese text-image retrieval case studies (up to +3.5 mean recall, +4.4 on native vs. translation errors). We also propose a mechanism to build understanding of object description variation across languages, and offer insights into cross-dataset and cross-language generalization.
+
 			</td>
 		</tr>
 	</table>
